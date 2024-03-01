@@ -3,7 +3,7 @@
 
 ### Source data : https://fbref.com/en/comps/9/Premier-League-Stats
 
-![plot](./img.png)
+![plot](./prom-image.png)
 
 
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
