@@ -1,0 +1,765 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 1,
+  "iteration": 1707435687516,
+  "links": [],
+  "panels": [
+    {
+      "cacheTimeout": null,
+      "content": "\n\n<img src=\"$image\" width=\"300\", height=\"300\">\n\n",
+      "datasource": "Prometheus",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 6,
+      "interval": null,
+      "links": [],
+      "maxDataPoints": 100,
+      "mode": "html",
+      "repeat": null,
+      "targets": [
+        {
+          "expr": "goals_scored{player=\"$player\"}",
+          "format": "time_series",
+          "instant": true,
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "title": "$player",
+      "type": "text"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": false,
+      "colors": [
+        "#0a50a1",
+        "#70dbed",
+        "#629e51"
+      ],
+      "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "format": "none",
+      "gauge": {
+        "maxValue": 38,
+        "minValue": 0,
+        "show": true,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 5,
+        "x": 4,
+        "y": 0
+      },
+      "id": 2,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "Bukayo Saka",
+      "targets": [
+        {
+          "expr": "starts{club=\"$club\", player=\"$player\"}",
+          "format": "time_series",
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "{{player}}",
+          "refId": "A"
+        }
+      ],
+      "thresholds": "0,5",
+      "title": "Games Start",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": false,
+      "colors": [
+        "#0a50a1",
+        "#70dbed",
+        "#629e51"
+      ],
+      "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "format": "none",
+      "gauge": {
+        "maxValue": 38,
+        "minValue": 0,
+        "show": true,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 5,
+        "x": 9,
+        "y": 0
+      },
+      "id": 8,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "Bukayo Saka",
+      "targets": [
+        {
+          "expr": "goals_scored{club=\"$club\", player=\"$player\"}",
+          "format": "time_series",
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "{{player}}",
+          "refId": "A"
+        }
+      ],
+      "thresholds": "0,5",
+      "title": "Goals Scored",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": false,
+      "colors": [
+        "#0a50a1",
+        "#70dbed",
+        "#629e51"
+      ],
+      "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "format": "none",
+      "gauge": {
+        "maxValue": 38,
+        "minValue": 0,
+        "show": true,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 5,
+        "x": 14,
+        "y": 0
+      },
+      "id": 5,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "Bukayo Saka",
+      "targets": [
+        {
+          "expr": "assists{club=\"$club\",player=\"$player\"}",
+          "format": "time_series",
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "{{player}}",
+          "refId": "A"
+        }
+      ],
+      "thresholds": "0,5",
+      "title": "Assists Made",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": false,
+      "colors": [
+        "#0a50a1",
+        "#70dbed",
+        "#629e51"
+      ],
+      "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "format": "none",
+      "gauge": {
+        "maxValue": 38,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 5,
+        "x": 19,
+        "y": 0
+      },
+      "id": 7,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": true
+      },
+      "tableColumn": "Bukayo Saka",
+      "targets": [
+        {
+          "expr": "minutes_played{club=\"$club\",player=\"$player\"}",
+          "format": "time_series",
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "{{player}}",
+          "refId": "A"
+        }
+      ],
+      "thresholds": "0,5",
+      "title": "Minutes Played",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 10
+              },
+              {
+                "color": "yellow",
+                "value": 15
+              },
+              {
+                "color": "purple",
+                "value": 20
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 21,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "hideTimeOverride": false,
+      "id": 4,
+      "links": [],
+      "options": {
+        "displayMode": "gradient",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "7.0.4",
+      "targets": [
+        {
+          "expr": "starts{club=\"$club\"}",
+          "format": "time_series",
+          "hide": false,
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "{{player}}",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "$club",
+      "type": "bargauge"
+    }
+  ],
+  "schemaVersion": 25,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": "Arsenal",
+          "value": "Arsenal"
+        },
+        "datasource": "Prometheus",
+        "definition": "label_values(goals_scored , club)",
+        "hide": 0,
+        "includeAll": false,
+        "label": "club",
+        "multi": false,
+        "name": "club",
+        "options": [
+          {
+            "selected": true,
+            "text": "Arsenal",
+            "value": "Arsenal"
+          },
+          {
+            "selected": false,
+            "text": "Liverpool",
+            "value": "Liverpool"
+          }
+        ],
+        "query": "label_values(goals_scored , club)",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": "Bukayo Saka",
+          "value": "Bukayo Saka"
+        },
+        "datasource": "Prometheus",
+        "definition": "label_values(goals_scored {club=\"$club\"} , player)",
+        "hide": 0,
+        "includeAll": false,
+        "label": "player",
+        "multi": false,
+        "name": "player",
+        "options": [
+          {
+            "selected": false,
+            "text": "Aaron Ramsdale",
+            "value": "Aaron Ramsdale"
+          },
+          {
+            "selected": false,
+            "text": "Ben White",
+            "value": "Ben White"
+          },
+          {
+            "selected": false,
+            "text": "Bradley Ibrahim",
+            "value": "Bradley Ibrahim"
+          },
+          {
+            "selected": true,
+            "text": "Bukayo Saka",
+            "value": "Bukayo Saka"
+          },
+          {
+            "selected": false,
+            "text": "Charles Sagoe Jr",
+            "value": "Charles Sagoe Jr"
+          },
+          {
+            "selected": false,
+            "text": "Cédric Soares",
+            "value": "Cédric Soares"
+          },
+          {
+            "selected": false,
+            "text": "David Raya",
+            "value": "David Raya"
+          },
+          {
+            "selected": false,
+            "text": "Declan Rice",
+            "value": "Declan Rice"
+          },
+          {
+            "selected": false,
+            "text": "Eddie Nketiah",
+            "value": "Eddie Nketiah"
+          },
+          {
+            "selected": false,
+            "text": "Emile Smith Rowe",
+            "value": "Emile Smith Rowe"
+          },
+          {
+            "selected": false,
+            "text": "Ethan Nwaneri",
+            "value": "Ethan Nwaneri"
+          },
+          {
+            "selected": false,
+            "text": "Fabio Vieira",
+            "value": "Fabio Vieira"
+          },
+          {
+            "selected": false,
+            "text": "Gabriel Dos Santos",
+            "value": "Gabriel Dos Santos"
+          },
+          {
+            "selected": false,
+            "text": "Gabriel Jesus",
+            "value": "Gabriel Jesus"
+          },
+          {
+            "selected": false,
+            "text": "Gabriel Martinelli",
+            "value": "Gabriel Martinelli"
+          },
+          {
+            "selected": false,
+            "text": "Jakub Kiwior",
+            "value": "Jakub Kiwior"
+          },
+          {
+            "selected": false,
+            "text": "Jorginho",
+            "value": "Jorginho"
+          },
+          {
+            "selected": false,
+            "text": "Jurriën Timber",
+            "value": "Jurriën Timber"
+          },
+          {
+            "selected": false,
+            "text": "Kai Havertz",
+            "value": "Kai Havertz"
+          },
+          {
+            "selected": false,
+            "text": "Karl Jakob Hein",
+            "value": "Karl Jakob Hein"
+          },
+          {
+            "selected": false,
+            "text": "Leandro Trossard",
+            "value": "Leandro Trossard"
+          },
+          {
+            "selected": false,
+            "text": "Martin Ødegaard",
+            "value": "Martin Ødegaard"
+          },
+          {
+            "selected": false,
+            "text": "Mohamed Elneny",
+            "value": "Mohamed Elneny"
+          },
+          {
+            "selected": false,
+            "text": "Myles Lewis-Skelly",
+            "value": "Myles Lewis-Skelly"
+          },
+          {
+            "selected": false,
+            "text": "Oleksandr Zinchenko",
+            "value": "Oleksandr Zinchenko"
+          },
+          {
+            "selected": false,
+            "text": "Reiss Nelson",
+            "value": "Reiss Nelson"
+          },
+          {
+            "selected": false,
+            "text": "Reuell Walters",
+            "value": "Reuell Walters"
+          },
+          {
+            "selected": false,
+            "text": "Takehiro Tomiyasu",
+            "value": "Takehiro Tomiyasu"
+          },
+          {
+            "selected": false,
+            "text": "Thomas Partey",
+            "value": "Thomas Partey"
+          },
+          {
+            "selected": false,
+            "text": "William Saliba",
+            "value": "William Saliba"
+          }
+        ],
+        "query": "label_values(goals_scored {club=\"$club\"} , player)",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "https://fbref.com/req/202302030/images/headshots/7a2e46a8_2022.jpg",
+          "value": "https://fbref.com/req/202302030/images/headshots/7a2e46a8_2022.jpg"
+        },
+        "datasource": "Prometheus",
+        "definition": "label_values(goals_scored {club=\"$club\" , player=\"$player\"} ,image)",
+        "hide": 2,
+        "includeAll": false,
+        "label": "image",
+        "multi": false,
+        "name": "image",
+        "options": [
+          {
+            "selected": true,
+            "text": "https://fbref.com/req/202302030/images/headshots/7a2e46a8_2022.jpg",
+            "value": "https://fbref.com/req/202302030/images/headshots/7a2e46a8_2022.jpg"
+          }
+        ],
+        "query": "label_values(goals_scored {club=\"$club\" , player=\"$player\"} ,image)",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "",
+  "title": "player_dashboard",
+  "uid": "SViXe4tSz",
+  "version": 6
+}
