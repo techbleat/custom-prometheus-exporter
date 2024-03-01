@@ -6,8 +6,6 @@
 ![plot](./prom-image.png)
 
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
-
 ## Set Up Requirements on a (Amazon) Linux node ( If you dont want to run on your local PC)
 ```
 sudo yum update -y 
